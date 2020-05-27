@@ -19,3 +19,8 @@ With a link to just created MariaDB and the binding to port 80. The link is just
 ## Install Drupal 
 Open `localhost:80` in browser. You need to specify database host as *'mysql'* instead of *'localhost'*. That’s the name of the binding we’ve created before.
 
+## Bash into container
+
+`docker exec -t -i <container_name> /bin/bash`
+
+Your working Drupal site should be in /var/www/html
