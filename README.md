@@ -24,3 +24,12 @@ Open `localhost:80` in browser. You need to specify database host as *'mysql'* i
 `docker exec -t -i <container_name> /bin/bash`
 
 Your working Drupal site should be in /var/www/html
+
+---
+
+## Install Composer
+
+`wget https://raw.githubusercontent.com/composer/getcomposer.org/4d7f8d40f9788de07c7f7b8946f340bf89535453/web/installer -O - -q | php -- --quiet`
+
+put it in a directory that is part of your `PATH`, you can access it globally.
+`mv composer.phar /usr/local/bin/composer`
